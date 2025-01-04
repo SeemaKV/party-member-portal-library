@@ -17,8 +17,9 @@ public class User {
     private String name;
     @Column(name = "aadhar_number")
     private String aadharNumber;
-    @Column(name = "phone_number")
+    @Column(name = "phone_number", unique = true)
     private String phoneNumber;
+    @Column(unique = true)
     private String password;
     @Column(name = "party_name")
     private String partyName;
